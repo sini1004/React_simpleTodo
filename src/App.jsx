@@ -15,7 +15,8 @@ function App() {
     <>
       <input type="text" onChange={(event) => setInputValue(event.target.value)} value={inputValue || ""}/>
       <button onClick={addItem}>추가</button>
-      <TodoBoard />
+
+      <TodoBoard todoList = {todoList} /> {/* todolist값을 props를 이용해서 TodoBoard에 전달 */}
     </>
   );
 }
