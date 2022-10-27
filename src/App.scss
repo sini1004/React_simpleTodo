@@ -10,3 +10,24 @@
   display: flex;
   align-items: center;
 }
+
+.input-style {
+  @include box(400px);
+}
+.btn-style {
+  @include box(90px, 56px);
+  padding-left: 0;
+  background-color: lightsteelblue;
+  transition: all 0.4s;
+  vertical-align: bottom;
+  &:hover {
+    background: {
+      color: lightcyan;
+    }
+    border: 0;
+  }
+}
+
+.h1 {
+  color: lightsteelblue;
+}

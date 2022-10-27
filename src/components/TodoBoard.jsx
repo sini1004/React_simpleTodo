@@ -5,7 +5,7 @@ const TodoBoard = (props) => {
   console.log('todo', props.todoList)
   return (
     <>
-      <h1>TodoBoard</h1>
+      <h1 className='h1'>TodoBoard</h1>
       {props.todoList.map((item) => <TodoItem item = {item} />)}
     </>
   )
